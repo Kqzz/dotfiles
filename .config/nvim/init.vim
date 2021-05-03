@@ -28,9 +28,13 @@ Plug 'Vimjas/vim-python-pep8-indent'
 
 Plug 'b3nj5m1n/kommentary'
 
-" Lualine
+" Lualine - REQUIRES 5.0 OR LATER
 Plug 'hoob3rt/lualine.nvim'
-Plug 'ryanoasis/vim-devicons'
+" Plug 'ryanoasis/vim-devicons'
+
+" tabs - REQUIRES 5.0 OR LATER
+Plug 'romgrk/barbar.nvim'
+Plug 'kyazdani42/nvim-web-devicons'
 
 " tag autoclosing
 Plug 'cohama/lexima.vim'
