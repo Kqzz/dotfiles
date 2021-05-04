@@ -59,7 +59,7 @@ font-1 =
 
 modules-left = bspwm xwindow
 modules-center = mpd
-modules-right = pulseaudio eth date powermenu
+modules-right = updates-aurhelper pulseaudio eth date powermenu
 
 tray-position = right
 tray-padding = 0
@@ -280,6 +280,7 @@ bar-volume-fill-font = 2
 bar-volume-empty = ─
 bar-volume-empty-font = 2
 bar-volume-empty-foreground = ${colors.foreground-alt}
+bar-volume-underline = ${xrdb:color6}
 
 # [module/alsa]
 # type = internal/alsa
@@ -389,6 +390,11 @@ menu-2-0 = power off
 menu-2-0-exec = sudo poweroff
 menu-2-1 = cancel
 menu-2-1-exec = menu-open-0
+
+[module/updates-aurhelper]
+type = custom/script
+exec = ~/.local/bin/polybar-pacman-yay
+interval = 600
 
 [settings]
 screenchange-reload = true
