@@ -15,3 +15,4 @@ map('n', '<C-w>|', ':vnew<CR>')
 
 map('n', '<C-l>', ':LspTroubleToggle<CR>')
 map('n', '<LEADER>a', ':call Calc()<CR>')
+
