@@ -53,3 +53,6 @@ vim.g.startify_lists = {
 vim.cmd [[autocmd CursorHold,CursorHoldI * lua require'nvim-lightbulb'.update_lightbulb()]]
 
 vim.o.completeopt = "menuone,noselect"
+
+-- nvim tree
+vim.g.nvim_tree_auto_open = 1

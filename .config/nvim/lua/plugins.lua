@@ -36,6 +36,13 @@ return require('packer').startup(function()
     end
   }
 
+  use {
+    'lewis6991/gitsigns.nvim',
+    requires = {
+      'nvim-lua/plenary.nvim'
+    }
+  }
+
   use {'mhinz/vim-startify'}
 
   use 'b3nj5m1n/kommentary'
@@ -67,6 +74,19 @@ return require('packer').startup(function()
   end
   }
   use 'cohama/lexima.vim'
+
+  use 'tell-k/vim-autopep8'
+
+  use 'cespare/vim-toml'
+
+  use {
+    "ray-x/lsp_signature.nvim",
+  }
+
+  use {
+    'nvim-telescope/telescope.nvim',
+    requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}}
+  }
 
   end
 )

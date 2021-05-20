@@ -16,3 +16,7 @@ map('n', '<C-w>|', ':vnew<CR>')
 map('n', '<C-l>', ':LspTroubleToggle<CR>')
 map('n', '<LEADER>a', ':call Calc()<CR>')
 
+-- nnoremap <silent> ff    <cmd>lua vim.lsp.buf.formatting()<CR>
+
+map('n', 'ff', '<cmd>lua vim.lsp.buf.formatting()<CR>', { silent = true })
+map('n', '<leader>f', '<cmd>Telescope find_files<cr>')
