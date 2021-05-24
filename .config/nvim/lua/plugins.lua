@@ -88,5 +88,8 @@ return require('packer').startup(function()
     requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}}
   }
 
+  use "plasticboy/vim-markdown"
+  use "dhruvasagar/vim-table-mode"
+
   end
 )
