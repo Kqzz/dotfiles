@@ -40,7 +40,6 @@ vim.g.startify_commands = {
 }
 
 vim.g.startify_change_dir = 1
-vim.g.startify_change_to_vcs_root = 1
 
 vim.g.startify_lists = {
   {type = 'files', header = {'   Recent Files'}},
@@ -56,3 +55,24 @@ vim.o.completeopt = "menuone,noselect"
 
 -- nvim tree
 vim.g.nvim_tree_auto_open = 1
+
+vim.g.neovide_refresh_rate = 140
+
+cmd[[set guifont=Fira\ Code\ Nerd\ Font:h14]]
+
+
+cmd'set smarttab'
+cmd'set ts=4 sw=4'
+
+vim.g.vimwiki_lists = {
+	{
+		path = '~/documents/vimwiki',
+		syntax = 'markdown',
+		ext = '.md'
+	}
+}
+
+vim.g.nvim_tree_auto_ignore_ft = {
+	'startify',
+	'dashboard'
+}

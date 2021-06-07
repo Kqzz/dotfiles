@@ -4,10 +4,18 @@
 require'lspconfig'.pyls.setup{}
 
 -- go
-require'lspconfig'.gopls.setup{}
+require'lspconfig'.gopls.setup{
+	cmd = { "gopls", "--remote=auto" },
+	filetypes = { "go", "gomod" },
+}
 
 -- rust
 require'lspconfig'.rust_analyzer.setup{}
+
+-- markdown lol
+require'lspconfig'.zeta_note.setup{
+  cmd = {'path/to/zeta-note'}
+}
 
 function goimports(timeout_ms)
   local context = { source = { organizeImports = true } }

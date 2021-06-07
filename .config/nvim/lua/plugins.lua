@@ -91,5 +91,7 @@ return require('packer').startup(function()
   use "plasticboy/vim-markdown"
   use "dhruvasagar/vim-table-mode"
 
+  use "vimwiki/vimwiki"
+
   end
 )
