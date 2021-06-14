@@ -5,11 +5,15 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 ### Autostart ###
 
 setxkbmap us &
+xrandr --output DP-4 --mode 1920x1080 --rate 144 &
 picom -f &
 nitrogen --restore &
 ~/.config/polybar/launch.sh &
 flameshot &
+udiskie &
 dunst & 
+
+greenclip daemon &
 
 ### Monitors ###
 
