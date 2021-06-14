@@ -83,6 +83,8 @@ return require('packer').startup(function()
     "ray-x/lsp_signature.nvim",
   }
 
+  use "romgrk/barbar.nvim"
+
   use {
     'nvim-telescope/telescope.nvim',
     requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}}
@@ -92,6 +94,7 @@ return require('packer').startup(function()
   use "dhruvasagar/vim-table-mode"
 
   use "vimwiki/vimwiki"
+  use "mattn/webapi-vim"
 
   end
 )
