@@ -10,12 +10,35 @@ super + Return
 super + @space
 	rofi -show run	
 
+super + alt + period
+	rofi-emoji
+
 super + d 
 	rofi -show drun
 
+# Close screen
+super + shift + c
+    sleep 1; xset dpms force standby
+
+# Lock screen
+super + shift + x
+    betterlockscreen -t "Hello, $USER" -l blur
+
 # make sxhkd reload its configuration files:
-super + escape
-	pkill -USR1 -x sxhkd
+super + alt + shift + r
+	pkill -USR1 -x sxhkd; notify-send "sxhkd" "Reloaded config"
+
+# Show help
+super + slash
+    ~/.local/bin/sxhkd-help
+
+# OPENRGB
+
+super + ctrl + shift + m
+	openrgb -p pink
+
+super + ctrl + shift + n
+	openrgb -p off
 
 # Screenshot
 
@@ -26,20 +49,41 @@ alt + shift + i
 super + alt + shift + m
 	spotify
 
+# Math calc
+
+super + shift + c
+	rofi -show calc -modi calc -no-show-match -no-sort
+
+super + shift + p
+	rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
+
 #
 # Audio
 #
 
+# raise / lower volume
 XF86Audio{Raise,Lower}Volume
-	pulseaudio-ctl {up,down} 2
+	pulseaudio-ctl {up,down} 2; notify-send "{ Volume raised by 2,  Volume lowered by 2}"
 
-super + shift + m
+# Mute volume
+super + shift + alt + m
 	pulseaudio-ctl mute
 
 
 #
 # bspwm hotkeys
 #
+
+# Move current window to a pre-selected space
+super + shift + m
+    bspc node -n last.!automatic
+
+# Expand/contract a window by moving one of its side outward/inward
+super + shift + s : {h,j,k,l}
+    STEP=20; SELECTION={1,2,3,4}; \
+    bspc node -z $(echo "left -$STEP 0,bottom 0 $STEP,top 0 -$STEP,right $STEP 0" | cut -d',' -f$SELECTION) || \
+    bspc node -z $(echo "right -$STEP 0,top 0 $STEP,bottom 0 -$STEP,left $STEP 0" | cut -d',' -f$SELECTION)
+
 
 # quit/restart bspwm
 super + alt + {q,r}
