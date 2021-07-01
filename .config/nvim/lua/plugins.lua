@@ -96,5 +96,8 @@ return require('packer').startup(function()
   use "vimwiki/vimwiki"
   use "mattn/webapi-vim"
 
+  -- Emmet - HTML completions
+  use "mattn/emmet-vim"
+
   end
 )

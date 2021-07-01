@@ -9,7 +9,7 @@ utils.opt('o', 'termguicolors', true)
 
 cmd'syntax on'
 cmd'colorscheme onedark'
-cmd'set t_Co=256'
+-- cmd'set t_Co=256'
 
 -- mouse
 cmd'set mouse=a'
@@ -88,3 +88,9 @@ nnoremap <silent>    <A-7> :BufferGoto 7<CR>
 nnoremap <silent>    <A-8> :BufferGoto 8<CR>
 nnoremap <silent>    <A-9> :BufferLast<CR>
 ]]
+
+cmd [[
+highlight Normal guibg=none
+highlight NonText guibg=none
+]]
+
