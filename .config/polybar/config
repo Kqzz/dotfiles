@@ -57,10 +57,10 @@ font-1 =
 
 modules-left = bspwm xwindow
 modules-center = spotify
-modules-right = updates-aurhelper pulseaudio eth cpu memory date
+modules-right = pulseaudio eth cpu memory date updates-aurhelper
 
 tray-position = right
-tray-padding = 0
+tray-padding = 4
 
 wm-restack = bspwm
 
