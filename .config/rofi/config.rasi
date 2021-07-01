@@ -12,13 +12,15 @@ configuration {
     display-window  : "";
     display-combi   : "";
 
+    show-icons     : true;
+    icon-theme     : "Papirus";
 }
 * {
-    bg-color            : #2e3440;
-    bg-light-color      : #3b4252;
-    fg-color            : #d8dee9;
-    accent-color        : #88c0d0;
-    urgent-color        : #ebcb8b;
+    bg-color            : #272d39;
+    bg-light-color      : #31363f;
+    fg-color            : #d4dae6;
+    accent-color        : #85bdec;
+    urgent-color        : #e76659;
 
     background-color    : @bg-color;
     text-color          : @fg-color;
@@ -51,6 +53,8 @@ configuration {
 }
 #message {
     padding             : 0;
+
+    border              : 2 0 0;
 }
 #textbox {
     padding             : 8;
@@ -62,6 +66,9 @@ configuration {
     fixed-height        : false;
     spacing             : 0;
     padding             : 4 0;
+
+    border              : 2 0 0;
+    border-color        : @bg-light-color;
 }
 #element {
     padding             : 8;
