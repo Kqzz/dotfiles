@@ -6,4 +6,4 @@
 
 ## Info
 
-- Requires [jonaburg's](https://github.com/jonaburg) [fork](https://github.com/jonaburg/picom) of Picom
+- [Requires jonaburg's fork of Picom](https://github.com/jonaburg/picom)
