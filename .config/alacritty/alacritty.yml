@@ -37,7 +37,8 @@ colors:
     cyan:    '0x56b6c2'
     white:   '0xffffff'
 
-background_opacity: .8
+# background_opacity: .8
+background_opacity: 1
 
 env:
   TERM: xterm-256color
