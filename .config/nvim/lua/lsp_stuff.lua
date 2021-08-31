@@ -1,7 +1,7 @@
 -- require'lspconfig'.pyright.setup{}
 
 -- py
-require'lspconfig'.pyls.setup{}
+require'lspconfig'.pylsp.setup{}
 
 -- go
 require'lspconfig'.gopls.setup{

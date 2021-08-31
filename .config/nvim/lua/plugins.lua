@@ -10,7 +10,7 @@ return require('packer').startup(function()
     config = function()
       require('lualine').setup{
         options = {
-	  theme = 'auto',
+	  theme = 'onedark',
           section_separators = {'', ''},
           component_separators = {'', ''},
           disabled_filetypes = {},
@@ -47,7 +47,7 @@ return require('packer').startup(function()
 
   use 'b3nj5m1n/kommentary'
 
-  use {'lukas-reineke/indent-blankline.nvim', branch = 'lua'}
+  use {'lukas-reineke/indent-blankline.nvim', branch = 'master'}
 
   use 'onsails/lspkind-nvim'
   use 'hrsh7th/nvim-compe'
