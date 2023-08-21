@@ -1,0 +1,3 @@
+#!/bin/bash
+
+ZT='America/New_York' date "+%I:%M %p"
