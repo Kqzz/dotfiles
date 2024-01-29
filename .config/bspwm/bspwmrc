@@ -5,20 +5,17 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 ### Autostart ###
 
 setxkbmap us &
-xrandr --output DP-4 --mode 1920x1080 --rate 144 &
-picom --experimental-backend &
 nitrogen --restore &
-~/.config/polybar/launch.sh &
-flameshot &
-udiskie &
-dunst & 
 
-greenclip daemon &
+eww open bar &
+eww open bar2 &
+
 
 ### Monitors ###
 
-bspc monitor DP-4 -d 1 2 3
-bspc monitor HDMI-0 -d 4 5 6  
+bspc monitor DP-0 -d 1 2 3
+bspc monitor DP-4 -d 4 5 6  
+
 
 
 ### General config ###

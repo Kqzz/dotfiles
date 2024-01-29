@@ -15,12 +15,29 @@
 )
 (deflisten workspace "scripts/getWorkspaces")
 
+
+(defwidget workspaces1 []
+  (literal :content workspace1)
+)
+
+(deflisten workspace1 "scripts/getWorkspaces1")
+
+
 (defwidget left []
   (box :orientation "h"
        :space-evenly "false"
        :halign "start"
        :class "left"
   (workspaces))
+)
+
+
+(defwidget left1 []
+  (box :orientation "h"
+       :space-evenly "false"
+       :halign "start"
+       :class "left"
+  (workspaces1))
 )
 
 (defwidget wintitle []
@@ -94,14 +111,39 @@
   )
 )
 
-(defwindow bar
+
+(defwidget bar1 []
+  (box :class "bar"
+       :orientation "h"
+    (left1)
+    (center)
+    (right)
+  )
+)
+
+(defwindow bar0
    :geometry (geometry :x "0px"
-                       :y "10px"
+                       :y "5px"
                        :width "1900px"
-                       :height "40px"
+                       :height "30px"
                        :anchor "top center")
-   :stacking "fg"
+   :stacking "bg"
    :reserve (struts :distance "50px" :side "top")
    :windowtype "dock"
+   :monitor 0
    :wm-ignore false
  (bar))
+
+
+(defwindow bar1
+   :geometry (geometry :x "0px"
+                       :y "5px"
+                       :width "1900px"
+                       :height "30px"
+                       :anchor "top center")
+   :stacking "bg"
+   :reserve (struts :distance "50px" :side "top")
+   :windowtype "dock"
+   :monitor 1
+   :wm-ignore false
+ (bar1))

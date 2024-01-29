@@ -6,12 +6,19 @@
 [[ $- != *i* ]] && return
 
 alias ls='ls --color=auto'
+alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/go/bin/:$PATH"
 
 export EDITOR="nvim"
 
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+alias vim="nvim"
+alias phi="tgpt --provider phind"
+alias phii="tgpt -i --provider phind"
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
+source /usr/share/nvm/init-nvm.sh
+
+eval "$(zoxide init bash)"

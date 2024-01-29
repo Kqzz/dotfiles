@@ -1,9 +1,9 @@
 #!/bin/sh
 workspaces() {
 
-ws1="4"
-ws2="5"
-ws3="6"
+ws1="1"
+ws2="2"
+ws3="3"
 
 # Unoccupied
 un="0"
@@ -23,6 +23,7 @@ f3=$(bspc query -D -d focused --names | grep "$ws3" )
 ic_1=""
 ic_2=""
 ic_3=""
+ic_4=""
 if [ $f1 ]; then
     ic_1=""
 elif [ $f2 ]; then
@@ -32,6 +33,7 @@ elif [ $f3 ]; then
 fi
 
 echo "(box :class \"works\" :spacing \"-1\" :orientation \"h\" :halign \"center\" :space-evenly \"false\" (button :onclick \"bspc desktop -f $ws1\" :class \"w$un$o1$f1\" \"$ic_1\") (button :onclick \"bspc desktop -f $ws2\" :class \"w$un$o2$f2\" \"$ic_2\") (button :onclick \"bspc desktop -f $ws3\" :class \"w$un$o3$f3\" \"$ic_3\") )"
+
 }
 
 workspaces

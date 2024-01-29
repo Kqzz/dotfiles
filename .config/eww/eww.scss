@@ -2,9 +2,10 @@
 
 .bar {
   background-color: $bg;
-  font-family: Iosevka Nerd Font;
+  font-family: Fira Code Nerd Font;
   font-size: 12px;
   color: $fg;
+  // border-radius: 10px;
 }
 
 .launcher {
@@ -13,7 +14,7 @@
   .dispatcher {
     background-color: $green;
     color: $bg;
-    border-radius: 7px;
+    // border-radius: 7px;
     font-size: inherit;
     padding: 0 14px 0 10px;
   }
@@ -31,14 +32,14 @@
     padding: 6px 10px 6px 10px;
   }
 
-  .w01, .w02, .w03, .w04 {
+  .w01, .w02, .w03, .w04, .w05, .w06 {
     all: unset;
-    color: $black;
+    color: $fgDim;
     background-color: $bg;
     padding: 6px 10px 6px 10px;
   }
   
-  .w011, .w022, .w033, .w044 {
+  .w011, .w022, .w033, .w044, .w055, .w066 {
     all: unset;
     color: $green;
     background-color: $bg;
@@ -50,7 +51,7 @@
   color: $green;
   margin: 7px 0;
   padding: 0 10px;
-  border-radius: 7px;
+  // border-radius: 7px;
   font-size: 12px;
 }
 
@@ -58,7 +59,7 @@
   background: $yellow;
   margin: 7px 7px 7px 0;
   padding: 0 8px 0 12px;
-  border-radius: 7px;
+  // border-radius: 7px;
   .content {
     color: $bg;
     font-size: 14px;
@@ -79,7 +80,7 @@
 .musicbox {
   margin-right: 17px;
   .art {
-    border-radius: 100px;
+    // border-radius: 100px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -93,7 +94,7 @@
 .cal-box {
   font-family: Iosevka Nerd Font;
   background-color: $bg;
-  border-radius: 8px;
+  // border-radius: 8px;
   padding: 1rem 1rem .2rem;
 
   .cal {

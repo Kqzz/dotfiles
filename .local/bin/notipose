@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-
-/bin/notify-send -i ~/.config/dunst/images/heart.png "Health" "Check your posture 😃"
