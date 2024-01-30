@@ -7,8 +7,8 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 setxkbmap us &
 nitrogen --restore &
 
-eww open bar &
-eww open bar2 &
+eww open bar0 &
+eww open bar1 &
 
 
 ### Monitors ###
