@@ -18,6 +18,7 @@ alias vim="nvim"
 alias phi="tgpt --provider phind"
 alias phii="tgpt -i --provider phind"
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias ls="exa"
 
 source /usr/share/nvm/init-nvm.sh
 

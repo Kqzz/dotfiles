@@ -130,7 +130,7 @@
    :stacking "bg"
    :reserve (struts :distance "50px" :side "top")
    :windowtype "dock"
-   :monitor 0
+   :monitor 1
    :wm-ignore false
  (bar))
 
@@ -144,6 +144,6 @@
    :stacking "bg"
    :reserve (struts :distance "50px" :side "top")
    :windowtype "dock"
-   :monitor 1
+   :monitor 0
    :wm-ignore false
  (bar1))
