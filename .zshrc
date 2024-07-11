@@ -33,3 +33,18 @@ eval "$(zoxide init zsh)"
 
 alias vim="nvim"
 alias a="php artisan"
+
+alias vim="nvim"
+alias a="php artisan"
+
+export PATH="$PATH:/root/.local/bin"
+export PATH=$PATH:/usr/local/go/bin
+eval "$(zoxide init bash)"
+
+export PATH="$PATH:/root/.config/composer/vendor/bin"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export COMPOSER_ALLOW_SUPERUSER=1
